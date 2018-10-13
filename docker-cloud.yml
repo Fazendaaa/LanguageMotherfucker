@@ -1,0 +1,6 @@
+web:
+  image: dockercloud/quickstart-python
+  ports:
+    - "80:80"
+  roles:
+    - global
