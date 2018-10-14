@@ -3,4 +3,4 @@
 source: /docs
 include:
   - "(_)(\w)*(_)*.html"
-  - "(_)(\w)*(_)*.html.*.html"
+  - "(_)(\w)*(_)*.*.html"
