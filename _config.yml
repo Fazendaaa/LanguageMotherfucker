@@ -1,4 +1,10 @@
-source: docs/
+source: docs/index.html
 include:
   - "_*_.html"
   - "_*_.*.html"
+exclude: [
+  "README.md",
+  "README.PT.md"
+]
+
+]
