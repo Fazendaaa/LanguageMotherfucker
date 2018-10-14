@@ -1,7 +1,9 @@
-source: docs/index.html
-include:
-  - "_*_.html"
-  - "_*_.*.html"
+# https://jekyllrb.com/docs/configuration/options/
+source: docs/
+include: [
+  "_*_.html",
+  "_*_.*.html"
+]
 exclude: [
   "README.md",
   "README.PT.md"
