@@ -1,7 +1,7 @@
 # https://jekyllrb.com/docs/configuration/options/
 # https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml
 source:
-  - docs/index.html
+  - docs
 include:
   - "(_)(\w)*(_)*.html"
   - "(_)(\w)*(_)*.*.html"
