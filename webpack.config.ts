@@ -13,7 +13,13 @@ module.exports = {
     },
     resolve: {
         alias: {
-            main: join(__dirname, './src/main.ts')
+            main: join(__dirname, './src/main.ts'),
+            // https://github.com/NodeRedis/node_redis/issues/790#issuecomment-318904983
+            hiredis: join(__dirname, './src/aliases/hiredis.ts'),
+            menuExtra: join(__dirname, './src/lib/Telegraf/Extra/menu.ts'),
+            botTypings: join(__dirname, './src/lib/Telegraf/botTypings.d.ts'),
+            telegrafRedis: join(__dirname, './src/lib/Telegraf/Utils/redis.ts'),
+            menuKeyboard: join(__dirname, './src/lib/Telegraf/Keyboard/menu.ts')
         },
         extensions: [
             '.js',

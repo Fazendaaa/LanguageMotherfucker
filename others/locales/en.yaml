@@ -1,0 +1,14 @@
+notAvailable:
+  "This request is not available."
+
+startMessage:
+  "Hey,_ ${from.username}_!\nI'm *Language Mothefucker Bot*, my job is to ensure that a all members from group chat are following the default language.\nTo learn more, click in _Help_."
+
+helpMessage:
+  "Lorem ipsum."
+
+menuButton:
+  "Menu"
+
+helpButton:
+  "Help"

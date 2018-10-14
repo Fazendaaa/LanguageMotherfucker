@@ -1,8 +1,8 @@
-FROM node:8
+FROM node:9-alpine
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package.json ./
 
 COPY ./dist/ ./dist/
 

@@ -15,7 +15,11 @@
         "^.+\\.tsx?$": "ts-jest"
     },
     "moduleNameMapper": {
-        "main": "<rootDir>/src/main.ts"
+        "main": "<rootDir>/src/main.ts",
+        "menuExtra": "<rootDir>/src/lib/Telegraf/Extra/menu.ts",
+        "botTypings": "<rootDir>/src/lib/Telegraf/botTypings.d.ts",
+        "telegrafRedis": "<rootDir>/src/lib/Telegraf/Utils/redis.ts",
+        "menuKeyboard": "<rootDir>/src/lib/Telegraf/Keyboard/menu.ts"
     },
     "coveragePathIgnorePatterns": [
         "./node_modules/",
