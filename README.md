@@ -64,6 +64,7 @@ If you are the project or even make a PR that is approved, please be sure to put
 ## Built With
 * [dotenv](https://github.com/motdotla/dotenv)
 * [mongoose](https://github.com/Automattic/mongoose)
+* [node-language-detect](https://github.com/FGRibreau/node-language-detect)
 * [telegraf](https://github.com/telegraf/telegraf)
 * [telegraf-i18n](https://github.com/telegraf/telegraf-i18n)
 * [telegraf-session-redis](https://github.com/telegraf/telegraf-session-redis)

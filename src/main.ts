@@ -10,7 +10,7 @@ import { getSessionKey } from 'telegrafRedis';
 
 config();
 
-export const userSessionLimit = 60;
+const userSessionLimit = 60;
 
 const bot = new Telegraf(<string> process.env.BOT_KEY);
 const redisStorage = new RedisSession({
@@ -23,7 +23,7 @@ const redisStorage = new RedisSession({
         url: process.env.REDIS_URL
     }
 });
-export const internationalization = new I18n({
+const internationalization = new I18n({
     useSession: true,
     allowMissing: true,
     defaultLanguage: 'en',
@@ -45,14 +45,12 @@ bot.help(async ({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i
 
 bot.start(async ({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i18n.t('startMessage'), startExtra(i18n)));
 
-bot.on('text', async ({ i18n, message, replyWithMarkdown }: IBotContext) => {
-    const { text } = <IncomingMessage> message;
+bot.on('text', async ({ i18n, scene, message, replyWithMarkdown }: IBotContext) => {
+    const { type } = (<IncomingMessage> message).chat;
 
-    if (i18n.t('menuButton') === (<string> text).toLowerCase()) {
-        // return scene.enter('Menu');
-    } if (i18n.t('helpButton') === (<string> text).toLowerCase()) {
-        return replyWithMarkdown(i18n.t('helpMessage'), startExtra(i18n));
+    if ('private' === type) {
+        return scene.enter('Menu');
     }
 
-    return i18n.t('notAvailable');
+    return replyWithMarkdown(i18n.t('notAvailable'));
 });
