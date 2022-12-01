@@ -1,1 +1,16 @@
 
+notAvailable:
+  "هذا الطلب غير متاح ."
+
+startMessage:
+  "مرحبا,_ ${from.username}_!\nانا  *Language Mothefucker Bot*, وظيفتي هي التأكد من أن جميع أعضاء الدردشة الجماعية يتبعون اللغة الافتراضية
+\nلتعرف اكثر, اضغط  على _Help_."
+
+helpMessage:
+  "Lorem ipsum."
+
+menuButton:
+  "القائمة"
+
+helpButton:
+  "مساعدة"
